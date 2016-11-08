@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cp ./.shrc ~
+# use shrc in case I switch to zsh
+echo 'source ~/.shrc' >> ~/.bashrc
+
+cp ./.gitconfig ~
+cp -R ./.git_template ~
+
+cp -R ./.vim ~
+vim +PluginInstall +qall

@@ -1,0 +1,16 @@
+[user]
+	email = zmp@umich.edu
+	name = Zach Pomerantz
+[alias]
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --first-parent --graph --date=short -20
+	b = branch
+	co = checkout
+	c = commit
+	p = pull
+	a = add
+	s = status
+	cp = cherry-pick
+	ctags = !.git/hooks/ctags
+	cscope = !.git/hooks/cscope
+[init]
+	templatedir = /home/zzmp/.git_template

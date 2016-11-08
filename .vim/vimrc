@@ -1,0 +1,28 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ervandew/supertab'
+Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+
+call vundle#end()         " required
+filetype plugin indent on " required
+
+" see :h vundle for more details or wiki for FAQ
+
+" plugin settings
+nnoremap <A-p> :CtrlPTag<CR>
+nmap <F8> :TagbarToggle<CR>
+autocmd BufNewFile,BufRead *.c,*.cpp,*.h :TagbarToggle
+let g:syntastic_aggregate_errors = 1
