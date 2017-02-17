@@ -13,4 +13,4 @@
 	ctags = !.git/hooks/ctags
 	cscope = !.git/hooks/cscope
 [init]
-	templatedir = /home/zzmp/.git_template
+	templatedir = ~/.git_template
