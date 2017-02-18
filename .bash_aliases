@@ -1,13 +1,12 @@
-# settings
-export EDITOR=vim
-
-# aliases
+# git aliases
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit'
+alias gd='git diff'
 alias gco='git checkout'
 alias gcp='git cherry-pick'
 alias gh='git hist'
 alias gl='git hist'
 alias gp='git pull'
 alias gs='git status'
+alias gst='git show --stat'
