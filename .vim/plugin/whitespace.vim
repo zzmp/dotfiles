@@ -2,10 +2,10 @@
 match ErrorMsg '\s\+$'
 
 " tr trailing whitespace
-function! TrimWhiteSpace()
+function! Tr()
   %s/\s\+$//e
 endfunction
-autocmd FileWritePre * :call TrimWhiteSpace()
-autocmd FileAppendPre * :call TrimWhiteSpace()
-autocmd FilterWritePre * :call TrimWhiteSpace()
-autocmd BufWritePre * :call TrimWhiteSpace()
+autocmd FileWritePre * :call Tr()
+autocmd FileAppendPre * :call Tr()
+autocmd FilterWritePre * :call Tr()
+autocmd BufWritePre * :call Tr()
